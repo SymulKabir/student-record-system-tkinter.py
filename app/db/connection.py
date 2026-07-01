@@ -3,10 +3,10 @@ import mysql.connector
 import mysql.connector
 
 db_instance = mysql.connector.connect(
-  host="localhost",
-  user="taskflow_user",
-  password="12345",
-  database="taskflow"
+  host="127.0.0.1",
+  user="nextuser",
+  password="StrongPassword123!",
+  database="student"
 )
 
 

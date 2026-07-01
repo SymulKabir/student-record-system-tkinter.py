@@ -1,4 +1,5 @@
 import tkinter as tk
+from app.ui.form_view import FormView
 
 class InitUi:
     def __init__(self, root):
@@ -7,8 +8,10 @@ class InitUi:
         app_height = 700
         app_width = 600
         y_position = 0
-        x_position = root.screen_width()
-        # self.geometry(f"")
+        x_position = root.winfo_screenwidth() - app_width
+        self.root.geometry(f"{app_width}x{app_height}+{x_position}+{y_position}")
+        FormView(self.root)
+        
         
         
         
